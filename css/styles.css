@@ -393,8 +393,11 @@ img {
   flex-direction: column;
   flex-basis: calc((100% - 30px * 2) / 3);
 }
-.portfolio-item-p:hover,
-.portfolio-item-p:focus {
+.portfolio-link-p {
+  display: block;
+}
+.portfolio-link-p:hover,
+.portfolio-link-p:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -512,4 +515,9 @@ img {
 .footer-link-gl:hover,
 .footer-link-gl:focus {
   color: #2196f3;
+}
+
+.header-link-contacts:hover .contacts-icon,
+.header-link-contacts:focus .contacts-icon {
+  fill: #2196f3;
 }
