@@ -13,6 +13,7 @@
   --btn-bckg-color: #f5f4fa;
   --btn-bckg-color2: #2196f3;
 }
+
 body {
   font-family: var(--main-font);
   font-size: 14px;
@@ -63,6 +64,7 @@ img {
   display: flex;
   margin-right: auto;
   align-items: center;
+  justify-content: center;
 }
 .header-list {
   display: flex;
@@ -92,13 +94,28 @@ img {
 }
 .header-link {
   display: block;
+  position: relative;
   padding-top: 32px;
   padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--primery-text-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-link.header-link-blue::after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -1px;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--btn-bckg-color2);
 }
 .header-link-blue {
   font-weight: 500;
@@ -116,9 +133,13 @@ img {
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-icon {
   fill: #757575;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*Main-webstudio*/
@@ -232,6 +253,34 @@ img {
 .work-item {
   mix-blend-mode: normal;
 }
+
+.work-item-block {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-align: center;
+  text-transform: uppercase;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 70px;
+  padding-left: 27px;
+  padding-right: 27px;
+
+  background-color: rgba(47, 48, 58, 0.8);
+  color: #ffffff;
+}
+
 /*Our team*/
 .team {
   background-color: var(--btn-bckg-color);
@@ -289,6 +338,8 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socials-link:hover .socials-icon,
@@ -302,6 +353,8 @@ img {
 
 .socials-icon {
   fill: #afb1b8;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-wrapper {
@@ -335,15 +388,15 @@ img {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: #afb1b8;
-}
-.clients-link:hover .clients-icons,
-.clients-link:focus .clients-icons {
-  fill: #2196f3;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover,
 .clients-link:focus {
   border: 1px solid #2196f3;
+  fill: #2196f3;
 }
 
 /*Portfolio*/
@@ -362,6 +415,10 @@ img {
   border-radius: 4px;
   cursor: pointer;
   border: none;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn:hover,
 .btn:focus {
@@ -385,21 +442,24 @@ img {
   flex-wrap: wrap;
   gap: 30px;
 }
-.portfolio-item-p {
-  background-color: var(--header-color);
-}
+
 .portfolio-item-p {
   display: flex;
   flex-direction: column;
+  width: 370px;
+  background-color: var(--header-color);
   flex-basis: calc((100% - 30px * 2) / 3);
 }
 .portfolio-link-p {
   display: block;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-link-p:hover,
 .portfolio-link-p:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  outline: none;
 }
 
 .portfolio-title-p {
@@ -415,6 +475,40 @@ img {
   line-height: calc(30 / 16);
   color: var(--secondary-text-color);
 }
+
+.portfolio-block {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay-portfolio {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%);
+  transform-origin: bottom;
+
+  font-size: 18px;
+  line-height: calc(28 / 18);
+  letter-spacing: 0.03em;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+
+  background-color: rgba(33, 150, 243, 0.9);
+  color: #ffffff;
+
+  transition: transform 500ms linear;
+}
+
+.portfolio-item-p:hover .overlay-portfolio {
+  transform: translateY(0);
+}
+
 .border {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
@@ -456,12 +550,16 @@ img {
   font-style: normal;
   line-height: calc(24 / 14);
   color: var(--decoration2-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-link {
   font-weight: 400;
   font-style: normal;
   line-height: calc(24 / 14);
   color: var(--decoration3-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-list-item:nth-child(2) {
   margin-top: 9px;
@@ -496,6 +594,8 @@ img {
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .socials-icon-footer {
   fill: #ffffff;
@@ -520,4 +620,65 @@ img {
 .header-link-contacts:hover .contacts-icon,
 .header-link-contacts:focus .contacts-icon {
   fill: #2196f3;
+}
+
+/*Modal Window*/
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  transition: opacity 800ms, visibility 800ms;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 528px;
+  min-height: 581px;
+  background-color: var(--decoration2-color);
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 550ms ease 250ms, transform 550ms ease 250ms;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -90%);
+  opacity: 0;
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: var(--decoration2-color);
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.modal-btn-icon {
+  fill: #000000;
 }
