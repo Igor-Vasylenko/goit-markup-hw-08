@@ -505,7 +505,7 @@ img {
   transition: transform 500ms linear;
 }
 
-.portfolio-item-p:hover .overlay-portfolio {
+.portfolio-link-p:hover .overlay-portfolio {
   transform: translateY(0);
 }
 
@@ -659,11 +659,7 @@ img {
   transform: translate(-50%, -90%);
   opacity: 0;
 }
-.backdrop.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
+
 
 .modal-btn {
   position: absolute;
