@@ -336,8 +336,15 @@
         </div>
         <div class="feedback">
           <h2 class="feedback-title">Підпишіться на розсилку</h2>
-          <form class="feedback-form">
-            <input class="feedback-input" type="text" placeholder="E-mail" />
+          <form class="feedback-form" name="feedback_form">
+            <label class="feedback-label">
+              <input
+                class="feedback-input"
+                type="email"
+                name="user_email"
+                placeholder="E-mail"
+              />
+            </label>
             <button class="feedback-btn" type="submit">Підписатися</button>
             <svg class="feedback-icon-btn" width="24" height="24">
               <use href="./images/icons.svg#icon-icon-send"></use>
