@@ -521,6 +521,7 @@ img {
   display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
+  align-items: baseline;
 }
 .footer-container-left {
   display: flex;
@@ -567,8 +568,7 @@ img {
 .footer-container-middle {
   display: flex;
   flex-direction: column;
-  padding-top: 12px;
-  margin-right: 93px;
+   margin-right: 93px;
 }
 .footer-title {
   font-weight: 700;
@@ -606,10 +606,7 @@ img {
   background-color: #2196f3;
 }
 
-/*Feedback*/
-.feedback {
-  padding-top: 12px;
-}
+
 .feedback-title {
   font-weight: 700;
   font-size: 14px;
@@ -642,6 +639,8 @@ img {
 }
 
 .feedback-btn {
+  display: flex;
+  gap: 10px;
   width: 200px;
   height: 50px;
   background-color: #2196f3;
@@ -657,18 +656,18 @@ img {
   display: flex;
   cursor: pointer;
   align-items: center;
-  padding-left: 28px;
+  justify-content: center;
   color: #ffffff;
-}
-.feedback-btn:hover,
-.feedback-btn:focus
-
-.feedback-icon-btn {
   fill: #ffffff;
-  position: absolute;
-  top: 13px;
-  right: 28px;
 }
+
+.feedback-btn:hover,
+.feedback-btn:focus{
+  color: #ffffff;
+  fill: #ffffff;
+}
+
+
 
 .header-link:hover,
 .header-link:focus,
@@ -705,9 +704,8 @@ img {
 }
 
 .modal {
-  padding-top: 40px;
-  padding-left: 41px;
-  padding-right: 39px;
+  padding: 40px;
+ 
 
   position: absolute;
   top: 50%;
@@ -740,11 +738,15 @@ img {
   background-color: var(--decoration2-color);
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 .modal-btn-icon {
   fill: #000000;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
 
 .modal-btn:hover .modal-btn-icon,
 .modal-btn:focus .modal-btn-icon {
@@ -816,7 +818,7 @@ img {
   width: 100%;
   height: 120px;
   padding: 12px 16px;
-  font-size: 14px;
+  font-size: 12px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: 1px solid transparent;
