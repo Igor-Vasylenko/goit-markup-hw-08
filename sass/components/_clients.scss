@@ -22,9 +22,9 @@
     justify-content: center;
     width: 170px;
     height: 92px;
-    border: 1px solid $decoration5-color;
+    border: 1px solid $border-color-clients;
     border-radius: 4px;
-    fill: $decoration5-color;
+    fill: $clients-color;
   
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
       fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -32,7 +32,7 @@
   
   .clients-link:hover,
   .clients-link:focus {
-    border: 1px solid $decoration-color;
-    fill: $decoration-color;
+    border: 1px solid $clients-hover-color;
+    fill: $clients-hover-color;
   }
   

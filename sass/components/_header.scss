@@ -29,8 +29,8 @@
   margin-right: 93px;
 }
 .header {
-  background-color: $decoration2-color;
-  border-bottom: 1px solid #ececec;
+  background-color: $header-color;
+  border-bottom: 1px solid $border-header;
 }
 .header-logo {
   font-family: "Raleway";
@@ -100,10 +100,10 @@
 .header-link:focus,
 .header-link-contacts:hover,
 .header-link-contacts:focus {
-  color:  $btn-bckg-color2;
+  color:  $decoration4-color;
 }
 
 .header-link-contacts:hover .contacts-icon,
 .header-link-contacts:focus .contacts-icon {
-  fill: $btn-bckg-color2;
+  fill: $clients-hover-color;
 }
