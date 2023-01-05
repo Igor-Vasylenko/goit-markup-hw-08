@@ -1,0 +1,40 @@
+/*Specialties*/
+.specialties {
+    background-color: $header-color;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .specialties-container {
+    display: flex;
+  }
+  .specialties-list {
+    display: flex;
+    gap: 30px;
+  }
+  .specialties-item {
+    width: 270px;
+  }
+  .specialties-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    background-color: $decoration4-color;
+    margin-bottom: 30px;
+    border-radius: 4px;
+  }
+  .specialties-item-title {
+    font-weight: 700;
+    line-height: calc(16 / 14);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .specialties-item-text {
+    font-weight: 400;
+    line-height: calc(24 / 14);
+    color: $secondary-text-color;
+  }
+  .specialties-icons {
+    fill: $primery-text-color;
+  }

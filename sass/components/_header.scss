@@ -1,0 +1,109 @@
+/* Header style */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header-nav {
+  display: flex;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+}
+.header-list {
+  display: flex;
+  gap: 50px;
+}
+
+.header-logo {
+  margin-right: 93px;
+}
+.header {
+  background-color: $decoration2-color;
+  border-bottom: 1px solid #ececec;
+}
+.header-logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  color: $decoration-color;
+}
+.change {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  color: $primery-text-color;
+}
+.header-link {
+  display: block;
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: $primery-text-color;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-link.header-link-blue::after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -1px;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: $btn-bckg-color2;
+}
+.header-link-blue {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: $decoration-color;
+}
+.header-link-contacts {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: $secondary-text-color;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contacts-icon {
+  fill: $secondary-text-color;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-link:hover,
+.header-link:focus,
+.header-link-contacts:hover,
+.header-link-contacts:focus {
+  color:  $btn-bckg-color2;
+}
+
+.header-link-contacts:hover .contacts-icon,
+.header-link-contacts:focus .contacts-icon {
+  fill: $btn-bckg-color2;
+}
