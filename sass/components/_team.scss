@@ -1,14 +1,12 @@
 /*Our team*/
 .team {
     background-color: $btn-bckg-color;
-    padding-top: 94px;
-    padding-bottom: 94px;
   }
   .team-container {
     display: flex;
     flex-direction: column;
   }
-  .team-title {
+  .team__title {
     font-weight: 700;
     font-size: 36px;
     line-height: calc(42 / 36);
@@ -16,24 +14,28 @@
     color: $primery-text-color;
     margin-bottom: 50px;
   }
-  .team-item {
+  .team__list {
+    display: flex;
+    gap: 30px;
+  }
+  .team__item {
     background-color: $header-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
   }
-  .team-list {
-    display: flex;
-    gap: 30px;
+  .team-wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
-  .team-title-n {
+  .team-wrapper__title {
     font-weight: 500;
     font-size: 16px;
     line-height: calc(19 / 16);
     text-align: center;
     margin-bottom: 10px;
   }
-  .team-text {
+  .team-wrapper__text {
     font-weight: 400;
     font-size: 16px;
     line-height: calc(19 / 16);
@@ -48,7 +50,7 @@
     gap: 10px;
   }
   
-  .socials-link {
+  .socials-list__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,23 +60,21 @@
   
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  
-  .socials-link:hover .socials-icon,
-  .socials-link:focus .socials-icon {
-    fill:  $decoration2-color;
-  }
-  .socials-link:hover,
-  .socials-link:focus {
+  .socials-list__link:hover,
+  .socials-list__link:focus {
     background-color: $clients-hover-color;
   }
   
-  .socials-icon {
+  
+  .socials-list__icon {
     fill: $clients-color;
   
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  
-  .team-wrapper {
-    padding-top: 30px;
-    padding-bottom: 30px;
+  .socials-list__link:hover .socials-list__icon,
+  .socials-list__link:focus .socials-list__icon {
+    fill:  $decoration2-color;
   }
+ 
+
+  

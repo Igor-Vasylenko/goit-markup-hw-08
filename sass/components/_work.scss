@@ -3,7 +3,7 @@
     background-color: $header-color;
     padding-bottom: 94px;
   }
-  .work-title {
+  .work__title {
     font-weight: 700;
     font-size: 36px;
     line-height: calc(42 / 36);
@@ -11,15 +11,15 @@
     color: $primery-text-color;
     margin-bottom: 50px;
   }
-  .work-list {
+  .work__list {
     display: flex;
     gap: 30px;
   }
-  .work-item {
+  .work__item {
     mix-blend-mode: normal;
   }
   
-  .work-item-block {
+  .work__block {
     position: relative;
   }
   
@@ -28,11 +28,7 @@
     bottom: 0;
     left: 0;
   
-    font-weight: 700;
-    font-size: 14px;
-    line-height: calc(16 / 14);
-    text-align: center;
-    text-transform: uppercase;
+    
   
     display: flex;
     align-items: center;
@@ -45,4 +41,10 @@
     background-color: rgba(47, 48, 58, 0.8);
     color: $header-color;
   }
-  
+  .overlay__text{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    text-align: center;
+    text-transform: uppercase;
+  }

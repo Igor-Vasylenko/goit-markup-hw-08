@@ -1,15 +1,10 @@
 /* Header style */
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+
+.header {
+  background-color: $header-color;
+  border-bottom: 1px solid $border-header;
 }
-.container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
+
 .header-container {
   display: flex;
   align-items: center;
@@ -20,33 +15,25 @@
   align-items: center;
   justify-content: center;
 }
-.header-list {
-  display: flex;
-  gap: 50px;
-}
 
-.header-logo {
+.logo {
   margin-right: 93px;
-}
-.header {
-  background-color: $header-color;
-  border-bottom: 1px solid $border-header;
-}
-.header-logo {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
   color: $decoration-color;
 }
-.change {
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  line-height: calc(31 / 26);
+.header-nav__logo--change {
   color: $primery-text-color;
 }
-.header-link {
+.header-nav__list,
+.contacts-list {
+  display: flex;
+  gap: 50px;
+}
+
+.header-nav__link {
   display: block;
   position: relative;
   padding-top: 32px;
@@ -61,7 +48,12 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-link.header-link-blue::after {
+.header-nav__link--change {
+
+  color: $decoration-color;
+}
+
+.header-nav__link.header-nav__link--change::after {
   content: "";
   position: absolute;
   display: block;
@@ -71,14 +63,8 @@
   border-radius: 2px;
   background-color: $btn-bckg-color2;
 }
-.header-link-blue {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: calc(16 / 14);
-  letter-spacing: 0.02em;
-  color: $decoration-color;
-}
-.header-link-contacts {
+
+.contacts-list__link {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -90,20 +76,20 @@
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contacts-icon {
+.contacts-list__icon {
   fill: $secondary-text-color;
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-link:hover,
-.header-link:focus,
-.header-link-contacts:hover,
-.header-link-contacts:focus {
- color: $decoration-color;
+.header-nav__link:hover,
+.header-nav__link:focus,
+.contacts-list__link:hover,
+.contacts-list__link:focus {
+  color:  $decoration-color;
 }
 
-.header-link-contacts:hover .contacts-icon,
-.header-link-contacts:focus .contacts-icon {
+.contacts-list__link:hover .contacts-list__icon,
+.contacts-list__link:focus .contacts-list__icon {
   fill: $clients-hover-color;
 }
