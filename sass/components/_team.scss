@@ -3,14 +3,6 @@
   @include section-paddings($top: 94px, $bottom: 94px);
   background-color: $btn-bckg-color;
 
-  &__title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: calc(42 / 36);
-    text-align: center;
-    color: $primery-text-color;
-    margin-bottom: 50px;
-  }
   &__list {
     display: flex;
     gap: 30px;
@@ -22,10 +14,7 @@
     border-radius: 0px 0px 4px 4px;
   }
 }
-.team-container {
-  display: flex;
-  flex-direction: column;
-}
+
 
 .team-wrapper {
   padding-top: 30px;

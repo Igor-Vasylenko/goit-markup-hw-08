@@ -47,6 +47,15 @@ body {
   padding-right: 15px;
 }
 
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1666666667;
+  text-align: center;
+  color: #212121;
+  margin-bottom: 50px;
+}
+
 /* Header style */
 .header {
   background-color: #ffffff;
