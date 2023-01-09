@@ -1,8 +1,9 @@
 /*Clients*/
 .clients {
-    background-color: $header-color;
-  }
-  .clients__title {
+  background-color: $header-color;
+  @include section-paddings();
+
+  &__title {
     font-weight: 700;
     font-size: 36px;
     line-height: calc(42 / 36);
@@ -10,13 +11,13 @@
     color: $primery-text-color;
     margin-bottom: 50px;
   }
-  .clients__list {
+  &__list {
     display: flex;
     gap: 30px;
     align-items: center;
     justify-content: center;
   }
-  .clients__link {
+  &__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,14 +26,14 @@
     border: 1px solid $border-color-clients;
     border-radius: 4px;
     fill: $clients-color;
-  
+
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
       fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      border: 1px solid $clients-hover-color;
+      fill: $clients-hover-color;
+    }
   }
-  
-  .clients__link:hover,
-  .clients__link:focus {
-    border: 1px solid $clients-hover-color;
-    fill: $clients-hover-color;
-  }
-  
+}

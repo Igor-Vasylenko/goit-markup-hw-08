@@ -1,70 +1,70 @@
 /*Portfolio*/
 /*img*/
-.portfolio__img-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-  }
-  
-  .portfolio__img-item {
-    display: flex;
-    flex-direction: column;
-    width: 370px;
-    background-color: $header-color;
-    flex-basis: calc((100% - 30px * 2) / 3);
-  }
-  .portfolio__img-link {
-    display: block;
-  
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .portfolio__img-link:hover,
-  .portfolio__img-link:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
-    outline: none;
-  }
 
-  .portfolio-block {
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .portfolio-block__overlay {
+.portfolio__img-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.portfolio__img-item {
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+  background-color: $header-color;
+  flex-basis: calc((100% - 30px * 2) / 3);
+}
+.portfolio__img-link {
+  display: block;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio__img-link:hover,
+.portfolio__img-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  outline: none;
+}
+
+.portfolio-block {
+  position: relative;
+  overflow: hidden;
+
+  &__overlay {
     position: absolute;
     bottom: 0;
     left: 0;
     transform: translateY(100%);
     transform-origin: bottom;
-  
+
     font-size: 18px;
     line-height: calc(28 / 18);
     text-align: left;
-  
+
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 100%;
     padding: 63px 24px;
-  
+
     background-color: rgba(33, 150, 243, 0.9);
     color: $header-color;
-  
+
     transition: transform 500ms linear;
   }
-  
-  .portfolio__img-link:hover .portfolio-block__overlay {
-    transform: translateY(0);
-  }
-  
-  .portfolio-border {
-    padding: 20px 24px;
-    border: 1px solid $border;
-    border-top: 0;
-  }
-    
-  .portfolio-border__title {
+}
+
+.portfolio__img-link:hover .portfolio-block__overlay {
+  transform: translateY(0);
+}
+
+.portfolio-border {
+  padding: 20px 24px;
+  border: 1px solid $border;
+  border-top: 0;
+
+  &__title {
     font-weight: 700;
     font-size: 18px;
     line-height: calc(36 / 18);
@@ -72,9 +72,9 @@
     color: $primery-text-color;
     margin-bottom: 4px;
   }
-  .portfolio-border__text {
+  &__text {
     font-size: 16px;
     line-height: calc(30 / 16);
     color: $secondary-text-color;
   }
-  
+}
