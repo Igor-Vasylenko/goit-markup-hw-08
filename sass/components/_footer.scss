@@ -1,17 +1,14 @@
 /*Footer-left*/
 .footer {
   background-color: $footer-color;
-  &__logo {
-    margin-bottom: 20px;
-    &--change {
-      font-family: "Raleway";
-      font-weight: 700;
-      font-size: 26px;
-      line-height: calc(31 / 26);
-      color: $decoration2-color;
-    }
   }
+.logo--footer {
+  margin-bottom: 20px
 }
+.logo--footer-change {
+  color: $decoration2-color;
+}
+
 .footer-container {
   display: flex;
   @include section-paddings($top: 60px, $bottom: 60px);

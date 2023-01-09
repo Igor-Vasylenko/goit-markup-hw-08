@@ -132,7 +132,7 @@ body {
   color: #2196f3;
 }
 
-.header-nav__logo--change {
+.logo--change {
   color: #212121;
 }
 
@@ -626,14 +626,12 @@ body {
 .footer {
   background-color: #2f303a;
 }
-.footer__logo {
+
+.logo--footer {
   margin-bottom: 20px;
 }
-.footer__logo--change {
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.1923076923;
+
+.logo--footer-change {
   color: #ffffff;
 }
 
