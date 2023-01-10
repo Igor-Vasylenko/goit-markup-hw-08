@@ -12,6 +12,8 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .link {
@@ -40,20 +42,52 @@ body {
 }
 
 .container {
-  width: 1200px;
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
 
 .title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1666666667;
+  font-size: 28px;
+  line-height: 1.1785714286;
   text-align: center;
+  letter-spacing: 0.03em;
   color: #212121;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.1785714286;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1666666667;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+  }
 }
 
 /*Clients*/
@@ -458,22 +492,32 @@ body {
 
 /*Specialties*/
 .specialties {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .specialties {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .specialties {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .specialties__list {
   display: flex;
   gap: 30px;
-}
-.specialties__item {
-  width: 270px;
+  flex-wrap: wrap;
 }
 .specialties__box {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 270px;
+  width: 450px;
   height: 120px;
   background-color: #f5f4fa;
   margin-bottom: 30px;
@@ -487,6 +531,7 @@ body {
   line-height: 1.1428571429;
   text-transform: uppercase;
   margin-bottom: 10px;
+  text-align: center;
 }
 .specialties__text {
   font-weight: 400;
