@@ -103,7 +103,7 @@
             </li>
             <li class="specialties__item item">
               <div class="specialties__box">
-                <svg class="specialties__icons" width="70" height="70">
+                <svg class="specialties__icons" width="65" height="70">
                   <use href="./images/icons.svg#icon-clock-1"></use>
                 </svg>
               </div>
@@ -115,7 +115,7 @@
             </li>
             <li class="specialties__item item">
               <div class="specialties__box">
-                <svg class="specialties__icons" width="70" height="70">
+                <svg class="specialties__icons" width="65" height="70">
                   <use href="./images/icons.svg#icon-diagram-1"></use>
                 </svg>
               </div>
@@ -126,7 +126,7 @@
             </li>
             <li class="specialties__item item">
               <div class="specialties__box">
-                <svg class="specialties__icons" width="70" height="70">
+                <svg class="specialties__icons" width="65" height="70">
                   <use href="./images/icons.svg#icon-astronaut-1"></use>
                 </svg>
               </div>
@@ -189,17 +189,22 @@
         </div>
       </section> -->
       <!--Team-->
-      <!-- <section class="team section">
+      <section class="team section">
         <div class="container">
           <h2 class="title">Наша команда</h2>
           <ul class="team__list list">
             <li class="team__item item">
+              <picture>
+              <source srcset="./images/team/team1-dt@1x.jpg 1x, ./images/team/team1-dt@2x.jpg 2x"  media="(min-width: 1200px)">
+              <source srcset="./images/team/team1-tb@1x.jpg 1x, ./images/team/team1-tb@2x.jpg 2x"  media="(min-width: 768px)"> 
+              <source srcset="./images/team/team1-mb@1x.jpg 1x, ./images/team/team1-mb@2x.jpg 2x"  media="(min-width: 480px)"> 
               <img
                 class="team__img"
-                src="./images/img1(sqoosh).jpg"
+                src="./images/team/team1-dt@1x.jpg"
                 alt="Фото чоловіка в окулярах"
                 width="270"
               />
+              </picture>
               <div class="team-wrapper">
                 <h3 class="team-wrapper__title">Ігор Дем'яненко</h3>
                 <p class="team-wrapper__text">Product Designer</p>
@@ -261,12 +266,17 @@
             </li>
 
             <li class="team__item item">
-              <img
+              <picture>
+              <source srcset="./images/team/team2-dt@1x.jpg 1x, ./images/team/team2-dt@2x.jpg 2x"  media="(min-width: 1200px)">
+              <source srcset="./images/team/team2-tb@1x.jpg 1x, ./images/team/team2-tb@2x.jpg 2x"  media="(min-width: 768px)"> 
+              <source srcset="./images/team/team2-mb@1x.jpg 1x, ./images/team/team2-mb@2x.jpg 2x"  media="(min-width: 480px)"> 
+               <img
                 class="team__img"
-                src="./images/img2(sqoosh).jpg"
+                src="./images/team/team2-dt@1x.jpg"
                 alt="Фото жінки в окулярах"
                 width="270"
               />
+            </picture>
               <div class="team-wrapper">
                 <h3 class="team-wrapper__title">Ольга Рєпіна</h3>
                 <p class="team-wrapper__text">Frontend Developer</p>
@@ -327,12 +337,17 @@
               </div>
             </li>
             <li class="team__item item">
+              <picture>
+              <source srcset="./images/team/team3-dt@1x.jpg 1x, ./images/team/team3-dt@2x.jpg 2x"  media="(min-width: 1200px)">
+              <source srcset="./images/team/team3-tb@1x.jpg 1x, ./images/team/team3-tb@2x.jpg 2x"  media="(min-width: 768px)"> 
+              <source srcset="./images/team/team3-mb@1x.jpg 1x, ./images/team/team3-mb@2x.jpg 2x"  media="(min-width: 480px)">
               <img
                 class="team__img"
-                src="./images/img3(sqoosh).jpg"
+                src="./images/team/team3-dt@1x.jpg"
                 alt="Фото чоловіка"
                 width="270"
               />
+            </picture>
               <div class="team-wrapper">
                 <h3 class="team-wrapper__title">Микола Тарасов</h3>
                 <p class="team-wrapper__text">Marketing</p>
@@ -393,12 +408,17 @@
               </div>
             </li>
             <li class="team__item item">
+              <picture>
+                <source srcset="./images/team/team4-dt@1x.jpg 1x, ./images/team/team4-dt@2x.jpg 2x"  media="(min-width: 1200px)">
+                <source srcset="./images/team/team4-tb@1x.jpg 1x, ./images/team/team4-tb@2x.jpg 2x"  media="(min-width: 768px)"> 
+                <source srcset="./images/team/team4-mb@1x.jpg 1x, ./images/team/team4-mb@2x.jpg 2x"  media="(min-width: 480px)">
               <img
                 class="team__img"
-                src="./images/img4(sqoosh).jpg"
+                src="./images/team/team4-dt@1x.jpg"
                 alt="Фото чоловіка в окулярах"
                 width="270"
               />
+            </picture>
               <div class="team-wrapper">
                 <h3 class="team-wrapper__title">Михайло Єрмаков</h3>
                 <p class="team-wrapper__text">UI Designer</p>
@@ -460,59 +480,62 @@
             </li>
           </ul>
         </div>
-      </section> -->
-      <!--Clients-->
-      <!-- <section class="clients section">
-        <h2 class="title">Постійні клієнти</h2>
-        <ul class="clients__list list">
-          <li class="clients__item item">
-            <a class="clients__link link" href="" aria-label="logo icon">
-              <svg class="clients__icons" width="106" height="60">
-                <use href="./images/icons.svg#icon-Logo"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="clients__item item">
-            <a class="clients__link link" href="" aria-label="logo icon">
-              <svg class="clients__icons" width="106" height="60">
-                <use href="./images/icons.svg#icon-Logo-1"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="clients__item item">
-            <a class="clients__link link" href="" aria-label="logo icon">
-              <svg class="clients__icons" width="106" height="60">
-                <use href="./images/icons.svg#icon-Logo-2"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="clients__item item">
-            <a class="clients__link link" href="" aria-label="logo icon">
-              <svg class="clients__icons" width="106" height="60">
-                <use href="./images/icons.svg#icon-Logo-3"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="clients__item item">
-            <a class="clients__link link" href="" aria-label="logo icon">
-              <svg class="clients__icons" width="106" height="60">
-                <use href="./images/icons.svg#icon-Logo-4"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="clients__item item">
-            <a class="clients__link link" href="" aria-label="logo icon">
-              <svg class="clients__icons" width="106" height="60">
-                <use href="./images/icons.svg#icon-Logo-5"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
       </section>
-    </main> -->
+      <!--Clients-->
+      <section class="clients section">
+        <div class="container">
+          <h2 class="title">Постійні клієнти</h2>
+          <ul class="clients__list list">
+            <li class="clients__item item">
+              <a class="clients__link link" href="" aria-label="logo icon">
+                <svg class="clients__icons" width="106" height="60">
+                  <use href="./images/icons.svg#icon-Logo"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients__item item">
+              <a class="clients__link link" href="" aria-label="logo icon">
+                <svg class="clients__icons" width="106" height="60">
+                  <use href="./images/icons.svg#icon-Logo-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients__item item">
+              <a class="clients__link link" href="" aria-label="logo icon">
+                <svg class="clients__icons" width="106" height="60">
+                  <use href="./images/icons.svg#icon-Logo-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients__item item">
+              <a class="clients__link link" href="" aria-label="logo icon">
+                <svg class="clients__icons" width="106" height="60">
+                  <use href="./images/icons.svg#icon-Logo-3"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients__item item">
+              <a class="clients__link link" href="" aria-label="logo icon">
+                <svg class="clients__icons" width="106" height="60">
+                  <use href="./images/icons.svg#icon-Logo-4"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients__item item">
+              <a class="clients__link link" href="" aria-label="logo icon">
+                <svg class="clients__icons" width="106" height="60">
+                  <use href="./images/icons.svg#icon-Logo-5"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+                </section>
+        </div>
+    </main>
     <!--Footer-->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="footer-container container">
+       <div class="footer-tablet">
         <div class="footer-left">
           <a class="logo logo--footer link" href="./index.html"
             >Web<span class="logo--footer-change">Studio</span></a
@@ -600,6 +623,7 @@
             </li>
           </ul>
         </div>
+       </div>
         <div class="feedback">
           <p class="footer__text">Підпишіться на розсилку</p>
           <form class="feedback-form">
@@ -616,7 +640,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <!-- Модальне вікно -->
     <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">

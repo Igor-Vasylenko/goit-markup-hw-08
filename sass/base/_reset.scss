@@ -13,6 +13,9 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  
+  // object-position: center;
+  // object-fit: cover;
 }
 .link {
   text-decoration: none;
@@ -20,6 +23,6 @@ img {
 }
 .list {
   list-style: none;
-  margin: o;
+  margin: 0;
   padding: 0;
 }

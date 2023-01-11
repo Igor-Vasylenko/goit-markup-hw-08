@@ -4,11 +4,7 @@
   padding-bottom: 60px;
   background-color: $header-color;
 
-  @media screen and (min-width: 768px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-
+  
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -17,26 +13,43 @@
   &__list {
     display: flex;
     gap: 30px;
-    flex-wrap: wrap;   
-    
+    flex-wrap: wrap;
   }
-  // &__item {    
-      
-  // }
+  &__item {
+    flex-direction: column;
+    justify-content: center;
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
+  }
   &__box {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 450px;
-    height: 120px;   
+    height: 120px;
     background-color: $specialties-box-color;
     margin-bottom: 30px;
     border-radius: 4px;
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+      height: 120px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+      height: 120px;
+    }
   }
 
   &__icons {
     fill: $primery-text-color;
-     }
+  }
 
   &__title {
     font-weight: 700;
@@ -44,10 +57,14 @@
     text-transform: uppercase;
     margin-bottom: 10px;
     text-align: center;
+
+    @media screen and (min-width: 768px) {
+      text-align: left;;
   }
   &__text {
     font-weight: 400;
     line-height: calc(24 / 14);
     color: $secondary-text-color;
   }
+}
 }
