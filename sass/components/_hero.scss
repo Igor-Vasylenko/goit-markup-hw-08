@@ -1,25 +1,87 @@
 /*Hero*/
 .hero {
-  @include section-paddings($top: 200px, $bottom: 200px);
+  
+  @include section-paddings($top: 118px, $bottom: 118px);
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/Img-hero-bg.jpg);
+    url(../images/header/header-mb@1x.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/header/header-mb@2x.jpg);
+  }
+
+
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
 
+  @media screen and (min-width: 768px)  {
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/header/header-tb@1x.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/header/header-tb@2x.jpg);
+    }
+    
+        
+  }
+
+  @media screen and (min-width: 1200px)  {
+    @include section-paddings($top: 200px, $bottom: 200px);
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/header/header-dt@1x.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/header/header-dt@2x.jpg);
+    }
+    
+  }
+
   &__title {
-    width: 696px;
-    height: 120px;
+    max-width: 360px;
+    max-height: 84px;
     font-weight: 900;
-    font-size: 44px;
-    line-height: calc(60 / 44);
+    font-size: 26px;
+    line-height: calc(42 / 26);
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: $decoration2-color;
+
+    @media screen and (min-width: 1200px){
+    max-width: 696px;
+    max-height: 120px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: calc(60 / 44);
+      
+    }
   }
 }
 .hero-container {
@@ -29,8 +91,8 @@
 }
 
 .hero-button {
-  width: 216px;
-  height: 50px;
+ width: 200px;
+ height: 50px;
   background-color: $btn-bckg-color2;
   font-weight: 700;
   font-size: 16px;
@@ -44,4 +106,8 @@
   cursor: pointer;
   margin-top: 30px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  @media screen and (min-width: 1200px){
+  width: 216px;
+  }
 }
