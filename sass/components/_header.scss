@@ -11,9 +11,6 @@
   display: flex;
   align-items: center;
 
-  @media screen and (min-width: 1200px){
-    justify-content: center;
-  }  
 }
 
 .header-nav {
@@ -68,7 +65,7 @@
   }
 }
 
-.mobile-menu {
+.mobile-btn {
   position: absolute;
   border: none;
   background-color: inherit;
@@ -125,16 +122,21 @@
     &:hover,
     &:focus {
       color: $decoration-color;
-
-     @media screen and (min-width:768px) {
-      gap: 10px;
-      }
-      @media screen and (min-width:1200px) {
-        font-size: 14px;
-        line-height: calc(16 / 14);
-        }
+     }
+    @media screen and (min-width:768px) {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.02em;
+    gap: 10px;
     }
-
+    @media screen and (min-width:1200px) {
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    }
 
 
   }

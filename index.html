@@ -31,14 +31,15 @@
             >Web<span class="logo--change">Studio</span></a
           >
           <button
-            class="mobile-menu js-open-menu"
+            class="mobile-btn js-open-menu"
             aria-expanded="false"
             aria-controls="mobile-menu"
           >
-            <svg class="mobile-menu__icons" width="40" height="40">
+            <svg class="mobile-btn__icons" width="40" height="40">
               <use href="./images/icons.svg#icon-mobile-menu"></use>
             </svg>
           </button>
+          
           <ul class="header-nav__list list">
             <li class="header-nav__item">
               <a
@@ -241,7 +242,7 @@
                   class="team__img"
                   src="./images/team/team1-mb@1x.jpg"
                   alt="Фото чоловіка в окулярах"
-                  width="450"
+                  width="450px"
                 />
               </picture>
               <div class="team-wrapper">
@@ -331,7 +332,7 @@
                   class="team__img"
                   src="./images/team/team2-mb@1x.jpg"
                   alt="Фото жінки в окулярах"
-                  width="450"
+                  width="450px"
                 />
               </picture>
               <div class="team-wrapper">
@@ -420,7 +421,7 @@
                   class="team__img"
                   src="./images/team/team3-mb@1x.jpg"
                   alt="Фото чоловіка"
-                  width="450"
+                  width="450px"
                 />
               </picture>
               <div class="team-wrapper">
@@ -509,7 +510,7 @@
                   class="team__img"
                   src="./images/team/team4-mb@1x.jpg"
                   alt="Фото чоловіка в окулярах"
-                  width="450"
+                  width="450px"
                 />
               </picture>
               <div class="team-wrapper">
@@ -828,9 +829,61 @@
         </form>
       </div>
     </div>
+    <!--Mobile-menu-->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="menu-toggle__icons" width="19" height="19">
+          <use href="./images/icons.svg#icon-close_24px"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu list">
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link mobile-menu--change link" href="./index.html">Студія</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="">Портфоліо</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="">Контакти</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-contacts list">
+        <li class="mobile-contacts-item">
+          <a class="mobile-contacts-link mobile-contacts-link--change link" href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
+        <li class="mobile-contacts-item">
+          <a class="mobile-contacts-link link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="mobile-socials list">
+        <li class="mobile-socials-item">
+          <a class="mobile-socials-link link" href="">Instagram</a>
+        </li>
+        <li class="mobile-socials-item">
+          <a class="mobile-socials-link link" href="">Twitter</a>
+        </li>
+        <li class="mobile-socials-item">
+          <a class="mobile-socials-link link" href="">Facebook</a>
+        </li>
+        <li class="mobile-socials-item">
+          <a class="mobile-socials-link link" href="">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
 
     <!--Скрипт-->
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
