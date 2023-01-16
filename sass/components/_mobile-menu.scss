@@ -55,7 +55,7 @@
   fill: #2196F3;
 }
 .mobile-menu {
-  margin-bottom: 302px ;
+  margin-bottom: auto ;
 }
 
 .mobile-menu {
@@ -102,6 +102,7 @@ display: block;
 
 .mobile-socials {
 display: flex;
+flex-wrap: wrap;
 align-items: center;
 gap: 10px;
 font-family: 'Roboto';

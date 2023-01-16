@@ -22,14 +22,21 @@
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  width: 528px;
-  min-height: 581px;
+  max-width: 450px;
+  width: 100%;
+  min-height: 609px;
   background-color: $header-color;
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity 550ms ease 250ms, transform 550ms ease 250ms;
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    min-height: 581px;
+    
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -65,11 +72,19 @@
 .modal-label {
   display: block;
   text-align: center;
+  max-width: 370px;
   font-weight: 700;
   font-size: 20px;
-  line-height: calc(23 / 20);
+  line-height: calc(30 / 20);
   margin-bottom: 12px;
-}
+
+  @media screen and (min-width: 1200px) {
+    line-height: calc(23 / 20);
+    max-width: none;
+  } 
+    
+  }
+
 
 .modal-form-group {
   margin-bottom: 20px;
@@ -129,14 +144,22 @@
   width: 100%;
   height: 120px;
   padding: 12px 16px;
-  font-size: 12px;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.01em;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: 1px solid transparent;
   resize: none;
 
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+  @media screen and (min-width: 1200px) {
+    font-size: 12px;
+    line-height: calc(14 / 12);
+       
+  }  
 }
 
 .modal-form-message::placeholder {
@@ -163,10 +186,16 @@
 }
 
 .modal-form-agreement-desc {
-  font-size: 14px;
-  line-height: calc(24 / 14);
+  font-size: 12px;
+  line-height: calc(14 / 12);
   color: $secondary-text-color;
   user-select: none;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    
+  }
 }
 
 .modal-form-agreement-link {
